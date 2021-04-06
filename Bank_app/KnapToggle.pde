@@ -1,0 +1,4 @@
+
+void registrerTryk(){}
+
+void registrerRelease(){}
