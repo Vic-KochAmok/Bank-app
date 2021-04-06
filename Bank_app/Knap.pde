@@ -1,3 +1,4 @@
+class Knap{
 Boolean trykket;
 
 void registrerTryk(){}
@@ -5,3 +6,4 @@ void registrerTryk(){}
 void registrerRelease(){}
 
 void display(){}
+}
