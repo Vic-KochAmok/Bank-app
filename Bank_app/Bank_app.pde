@@ -12,9 +12,9 @@ void setup(){
 }
 
 void draw(){
-  knap 10 kr.registrerKilk();
-  knap 100 kr.registrerKilk();
-  knap 1000 kr.registrerKilk();
+  knap 10 kr.registrerTryk();
+  knap 100 kr.registrerTryk();
+  knap 1000 kr.registrerTryk();
   
   if(KnapAddMoney.trykket){
     if(knap 10kr.trykket){
