@@ -1,6 +1,6 @@
 Boolean trykket;
 
-class Knap{ //overfør
+class Knap extends Komponent{ //overfør
   void registrerTryk(){}
 
   void registrerRelease(){}
