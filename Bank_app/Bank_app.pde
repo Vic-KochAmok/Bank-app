@@ -1,10 +1,10 @@
-KnapToggle   knap10kr    = new;
-KnapToggle   knap100kr   = new;
-KnapToggle   knap1000kr  = new;
+KnapToggle   knap10kr    = new KnapToggle();
+KnapToggle   knap100kr   = new KnapToggle();
+KnapToggle   knap1000kr  = new KnapToggle();
 
-Knap        knapAddMoney = new;
+Knap        knapAddMoney = new Knap();
 
-KontoFelt   kontoFelt    = new;
+KontoFelt   kontoFelt    = new KontoFelt();
 
 void setup(){
   size(800,800);
