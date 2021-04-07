@@ -1,6 +1,7 @@
-Boolean trykket;
 
 class Knap extends Komponent{ //overfør
+Boolean trykket;
+
   void registrerTryk(){}
 
 
@@ -8,7 +9,9 @@ class Knap extends Komponent{ //overfør
 
 
   void display(){  
-  rect(20, 20, 55, 55, 7);
-  
+    rectMode(CENTER);
+    rect(150, 100, 200, 150, 7);
+    rect(650, 100, 200, 150, 7);
+    rect(width/2, 100, 200, 150, 7);
   }
   }

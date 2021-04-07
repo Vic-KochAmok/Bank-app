@@ -1,10 +1,10 @@
-KnapToggle   knap10kr     = new KnapToggle();
-KnapToggle   knap100kr    = new KnapToggle();
-KnapToggle   knap1000kr   = new KnapToggle();
+KnapToggle   knap10kr    = new KnapToggle();
+KnapToggle   knap100kr   = new KnapToggle();
+KnapToggle   knap1000kr  = new KnapToggle();
 
-Knap         knapAddMoney = new Knap();
+Knap        knapAddMoney = new Knap();
 
-KontoFelt    kontoFelt    = new KontoFelt();
+KontoFelt   kontoFelt    = new KontoFelt();
 
 void setup(){
   size(800,800);
@@ -12,9 +12,9 @@ void setup(){
 }
 
 void draw(){
-  knap 10 kr.registrerTryk();
-  knap 100 kr.registrerTryk();
-  knap 1000 kr.registrerTryk();
+  knap 10 kr.registrerKilk();
+  knap 100 kr.registrerKilk();
+  knap 1000 kr.registrerKilk();
   
   if(KnapAddMoney.trykket){
     if(knap 10kr.trykket){
