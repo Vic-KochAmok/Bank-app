@@ -1,4 +1,4 @@
-class KnapToggle extends Komponent{ //om man trykker på den
+class KnapToggle extends Knap{ //om man trykker på den
 void registrerTryk(){}
 
 void registrerRelease(){}
