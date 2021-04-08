@@ -1,17 +1,33 @@
 
 class Knap extends Komponent{ //overfør
-Boolean trykket;
+Boolean trykket = false;
+  Knap (int x, int y, int w, int h, int k, String txt){
+    xpos = x;
+    ypos = y;
+    wdth = w;
+    hght = h;
+    kant = k;
+    tekst = txt;
+  }
 
-  void registrerTryk(){}
 
+  void registrerTryk(){
+   if (mousePressed){
+  
+     
+   }
+  }
 
   void registrerRelease(){}
 
 
   void display(){  
     rectMode(CENTER);
-    rect(150, 100, 200, 150, 7);
-    rect(650, 100, 200, 150, 7);
-    rect(width/2, 100, 200, 150, 7);
+    if (trykket = true){
+      if (mouseX < 250)
+      if (mouseY < 200)
+
+
+    }
   }
   }

@@ -6,6 +6,10 @@ Knap         knapAddMoney = new Knap();
 
 KontoFelt    kontoFelt    = new KontoFelt();
 
+Knap Kasse1 = new Knap(150, 100, 200, 150, 7, '10kr');
+Knap Kasse2 = new Knap(650, 100, 200, 150, 7, '100kr');
+Knap Kasse3 = new Knap(width/2, 100, 200, 150, 7, '1000kr');
+
 void setup(){
   size(800,800);
   background(27);
