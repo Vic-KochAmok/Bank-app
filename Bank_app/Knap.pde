@@ -1,6 +1,7 @@
 
 class Knap extends Komponent{ //overfør
 Boolean trykket = false;
+
   Knap (int x, int y, int w, int h, int k, String txt){
     xpos = x;
     ypos = y;
@@ -9,12 +10,11 @@ Boolean trykket = false;
     kant = k;
     tekst = txt;
   }
-
-
+  
+  
   void registrerTryk(){
    if (mousePressed){
-  
-     
+     trykket = true;
    }
   }
 
@@ -22,12 +22,5 @@ Boolean trykket = false;
 
 
   void display(){  
-    rectMode(CENTER);
-    if (trykket = true){
-      if (mouseX < 250)
-      if (mouseY < 200)
-
-
     }
-  }
   }
