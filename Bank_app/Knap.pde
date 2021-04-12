@@ -1,4 +1,3 @@
-
 class Knap extends Komponent{ //overfør
 Boolean trykket = false;
 
