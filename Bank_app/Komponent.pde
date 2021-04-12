@@ -1,6 +1,12 @@
 class Komponent {
-float x,y,w,h;
+int xpos,ypos,wdth,hght,kant;
 String tekst;
 
-void display(){}
+    
+  }
+
+void display(){
+      rect(xpos,ypos,wdth,hght,kant);
+    
+    }
 }
