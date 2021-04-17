@@ -1,5 +1,5 @@
 class Komponent {
-int xpos,ypos,wdth,hght,kant;
+int xpos,ypos,wdth,hght,kant,tekstSize;
 String tekst;
 
     

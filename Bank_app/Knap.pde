@@ -1,14 +1,17 @@
 class Knap extends Komponent{ //overfør
 Boolean trykket = false;
-Boolean over;
+Boolean over = false;
 
-  Knap (int x, int y, int w, int h, int k, String txt){
+
+  Knap (int x, int y, int w, int h, int k, int tS, String txt){
     xpos = x;
     ypos = y;
     wdth = w;
     hght = h;
     kant = k;
+    tekstSize = tS;
     tekst = txt;
+    
   }
   
   
@@ -18,7 +21,12 @@ Boolean over;
     } else {
       over = false;
     }
-    if (mousePressed && over){
+    if (mousePressed && over == true){
+      fill(0,204,0);
+      rect(xpos, ypos, wdth, hght, kant);
+      fill(0);
+      textSize(tekstSize);
+      text(tekst, xpos, ypos);
     }
    }
 
@@ -28,8 +36,7 @@ Boolean over;
   }
 
   boolean overEvent() {
-    if (mouseX > xpos && mouseX < xpos+wdth &&
-       mouseY > ypos && mouseY < ypos+hght) {
+    if (mouseX > xpos - wdth/2 && mouseX < xpos + wdth/2 && mouseY > ypos - hght/2 && mouseY < ypos + hght/2) {
       return true;
     } else {
       return false;
@@ -37,8 +44,11 @@ Boolean over;
   }
 
   void display(){
+    fill(255);
     rect(xpos, ypos, wdth, hght, kant);
-    
+    fill(0);
+    textSize(tekstSize);
+    text(tekst, xpos, ypos);
   }
 }
   
