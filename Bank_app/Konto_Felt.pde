@@ -1,17 +1,16 @@
-class KontoFelt extends Komponent{
+class KontoFelt extends Komponent{ // KontoFelt er en underklasse til Komponent
   float balance = 0;
   
-  KontoFelt (int x, int y, int w, int h, int k, int tS, String txt){
+  KontoFelt (int x, int y, int w, int h, int k, int tS){ // Konstruktør
     xpos = x;
     ypos = y;
     wdth = w;
     hght = h;
     kant = k;
     tekstSize = tS;
-    tekst = txt;
   }
   
-  void add (float v){
+  void add (int v){ // metoden sætter balance sammen med værdien v
       balance += v;
   }
   void display(){
@@ -19,6 +18,6 @@ class KontoFelt extends Komponent{
     rect(xpos, ypos, wdth, hght, kant);
     fill(0);
     textSize(tekstSize);
-    text(tekst, xpos, ypos);
+    text(int(balance), xpos, ypos); // Skriver værdien af ens balance
   }
 }
