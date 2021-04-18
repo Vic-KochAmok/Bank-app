@@ -7,6 +7,5 @@ String tekst;
 
 void display(){
       rect(xpos,ypos,wdth,hght,kant);
-    
     }
 }
